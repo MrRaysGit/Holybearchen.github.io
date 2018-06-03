@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flag墙</title>
+	<meta charset="UTF-8">	
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,manimal-ui"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" type="text/css" href="./css/index1.0.css">
+	<link rel="stylesheet" type="text/css" href="./css/page.css">
+	<link rel="stylesheet" type="text/css" href="./lib/FlexSlider/flexslider.css">
+	<link rel="stylesheet" type="text/css" href="./lib/Font-Awesome-3.2.1/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./lib/iconfont2/iconfont.css">
+	<script type="text/javascript" src="./lib/jquery-1.11.2.js"></script>
+	<script type="text/javascript" src="./lib/FlexSlider/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="./dist/nebulas.js"></script>
+    <script type="text/javascript" src="./dist/nebPay.js"></script>
+</head>
+<body>
+	<!-- 导航 -->
+	<div class="header" id="index-header">
+		<div class="logo fl"><h1><a href="#"><img style="width:83px" src="./images/naslogo-b.png" alt=""></a></h1></div>
+		<nav id="nav" class="pcNav fl">
+			<li class="current"><a href="index.html">首页	</a></li>
+			<li><a href="contact+$("#input_if").val()+ $("#input_do").val().html">							联系我们</a></li>
+		</nav>
+		<div class="phoneNav">
+			<a href="#" class="close" id="J_phoneNavClose" iphonenavd="J_phoneNavClose"><i class=" icon-remove icon-3x"></i></a>
+			<ul class="navList">
+		    	<li class="current"><a href="index.html">首页	</a></li>
+				<li><a href="contact.html">				联系我们</a></li>
+	   		</ul>
+		</div>
+		<!-- 导航右边的按钮 -->
+		<div class="header-info fr">
+			<!-- 搜索框 -->
+			
+			<div class="pc-info clearfix">
+				
+				<a href="" class="btn-circle pink fontWhite">
+					EN	
+				</a>
+				<div class="btn-circle pink smallTopNav" id="J_smallTopNav">
+					<i class="icon-reorder"></i>
+				</div>	
+				<a class="btn-oval fl pink fontWhite" data-toggle="modal" data-target="#myModal" href="#">
+					<span style="font-size: 17px">+</span>
+					<span  id="setFlag">立个flag</span>
+				</a>
+			</div>
+			
+		</div>
+	</div>
+<!-- 	<div class="searchArea">
+		<div class="searchContainer clearfix">
+			<form class="" id="searchForm" role="search">
+			    <input type="text" class="form-control" placeholder="Search">
+			  	<button type="submit" class="btn btn-default">搜索</button>
+			</form>
+		</div>
+	</div> -->
+	<div class="wrapper">
+	<!-- banner -->
+	<div class="section" id="banner">
+	<div class="banner indexbanner">
+		<div class="banner-logo">
+			<span><img src="./images/naslogo-w.png" style="width:320px"></span>
+		</div>
+		<!-- <div class="slider"> <img src="./images/banner_06.jpg"></div> -->
+		<!-- 滚动 -->
+		<div class="banner-slide">
+			<ul class="slides">
+				<li><img class="banner-img" src="./images/banner_06.jpg" alt=""></li>
+				<li><img class="banner-img" src="./images/cele.jpg" alt=""></li>
+				<li><img class="banner-img" src="./images/foodBanner_02.jpg" alt=""></li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	<!-- 第1块  到班夫看什么-->
+	<div class="section index-section1 pbSection pageSection" id="section1">
+		<div class="sectionInner">
+			<div class="sectionText">
+				<h1>大家说了什么</h1>
+				<p class="fontGray">今天，又有哪些家伙立了flag？</p>
+			</div>
+			<div class="picWall fullWall paddingBWall">
+		    
+		        <div id="masonry" class="container-fall">
+		        </div>
+		        <div id="masonry_ghost" class="hide">
+		            <div class="thumbnail celeItem ">
+		                <div class="img-icon lu likeBtn hideIcon">
+		                    <div class="btn-circle green">
+		                        <i class="icon-heart"></i>
+		                    </div>
+		                </div>
+		                <a href="index.html"><!-- 跳转链接 -->
+		                    <div class="images">
+		                        <input type="hidden" value="noPic" title="cele">
+		                        <div class="celeName noPic">
+		                            <div class="inner">
+		                                <h2>王境泽信誓旦旦地说：</h2>
+		                                <p>
+		                                    <i class="icon-time fontPink"></i>
+		                                    <span class="fontGray">1月</span>
+		                                </p>
+		                            </div>
+		                        </div>
+		                    </div>
+
+		                    <div class="caption">
+		                        <div class="content">
+		                            <p>我王境泽就算是死，也不会吃你们一口吃的！</p>
+		                        </div>
+		                    </div>
+		                </a>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</div>
+	
+	<!-- 微信微博 -->
+	<div class="section index-social text-center" id="section6">
+		<div class="social-inner">
+			<p class="text-center"><img src="images/qr.png"></p>
+			<p class="text-center"><i class="icon-mobile-phone"></i>手机扫码关注我</p>
+			
+			<p class="text-center socialIcon"><img src="images/weibo.png"><span><i class="iconfont fontGray icon-line"></i></span><img src="images/wechat.png"></p>
+		</div>
+	</div>
+	<!-- 最底下 -->
+	<div class="jump-top-box">
+		<div class="jumpTop fontWhite">
+			<i class="icon-angle-up"></i>
+		</div>
+	</div>
+	<div class="footer">
+		<p>
+			©flag墙版权所有   假的备案号  
+		</p>
+	</div>
+	</div>
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">立下你的flag吧！</h4>
+	      </div>
+	      <div class="modal-body">
+	        我 <input type="text" name="name" id="input_name">如果 <input type="text" name="if_" id="input_if">
+	        ,就 <input type="text" name="do_" id="input_do">！！
+	        <div style="height:40px"></div>
+	        示范：我王境泽如果吃你们一口东西，就从这跳下去！！
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+	        <button id="flag-submit" type="button" class="btn btn-primary">提交</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<script src="./js/app.js"></script>
+	<script src="./js/waterfull.js"></script>
+	<script src="./js/page.js"></script>
+	<script src="./js/sliderInitial.js"></script>
+	<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./lib/masonry.pkgd.min.js"></script>
+	<script src="./lib/imagesloaded.pkgd.min.js"></script>
+	<script src="./js/LightBoxInit.js"></script>
+	<script src="./js/public.js"></script>
+	<script>
+		$.fn.pageReady=function(callback){
+			return this.each(function(){
+				$.isFunction(callback)&&callback.call(this);
+			});
+		};
+
+	    "use strict";
+	    var dappContactAddress = "n1iSzkeSMABcvACiGGkMigWQnXWw3bDX4WN";
+	    var nebulas = require("nebulas"), Account = Account, neb = new nebulas.Neb();
+	    neb.setRequest(new nebulas.HttpRequest("https://mainnet.nebulas.io"))
+
+
+	    var NebPay = require("nebpay");     //https://github.com/nebulasio/nebPay
+	    var nebPay = new NebPay();
+	    var serialNumber
+
+	 	function list_init(){
+	 		var from = dappContactAddress;
+	        var value = "0";
+	        var callFunction = "list";
+	        var callArgs = "[0,20]";
+	        var from = dappContactAddress
+	        var value = "0";
+	        var nonce = "0"
+	        var gas_price = "1000000"
+	        var gas_limit = "2000000"
+	        var contract = {
+           	 	"function": callFunction,
+            	"args": callArgs
+        	}
+	        console.log(callArgs);
+		    neb.api.call(from, dappContactAddress, value, nonce, gas_price, gas_limit, contract).then(function (resp) {
+	            var result = resp.result;
+	            result = JSON.parse(result);
+	            console.log(result);
+	            for (var i = result.length - 1; i >= 0; i--) {
+	            	var timestamp=result[i].timestamp;
+	            	var date =  new Date(timestamp);
+				    var y = 1900+date.getYear();
+				    var m = "0"+(date.getMonth()+1);
+				    var d = "0"+date.getDate();
+				    var time_= y+"-"+m.substring(m.length-2,m.length)+"-"+d.substring(d.length-2,d.length);
+	             	var appendItem="<div class='thumbnail celeItem '><div class='img-icon lu likeBtn hideIcon'><div class='btn-circle green'><i class='icon-heart'></i></div></div><a href='index.html'><div class='images'><input type='hidden' value='noPic' title='cele'><div class='celeName noPic'><div class='inner'><h2>"+result[i].name+"信誓旦旦地说：</h2><p><i class='icon-time fontPink'></i><span class='fontGray'>"+time_+"</span></p></div></div></div><div class='caption'><div class='content'><p>"+result[i].content+"!！</p></div></div></a></div>"
+	             	$('#masonry_ghost').append(appendItem);
+	             }
+	             waterFall();
+
+	        }).catch(function (err) {
+	            console.log("error :" + err.message);
+
+	        })
+	        console.log(1111111)
+	 	}
+	    $(function(){
+	    	list_init();
+	    })
+	    $('#flag-submit').click(function () {
+	        if (!$("#input_name").val() || !$("#input_if").val()|| !$("#input_do").val()) {
+	            alert('不能为空');
+	            return;
+	        }
+	        var to = dappContactAddress;
+	        var value = "0";
+	        var callFunction = "save";
+	        var name=$("#input_name").val();
+	        var content='我'+name+'如果'+$("#input_if").val()+',就'+ $("#input_do").val()+'!!!';
+	        var callArgs = "[\"" +name + "\",\"" +content + "\"]";
+	        serialNumber = nebPay.call(to, value, callFunction, callArgs, {    //使用nebpay的call接口去调用合约,
+	            listener: function (resp) {
+	                console.log("thecallback is " + resp)
+	            }
+	        });
+
+	    })
+
+	</script>
+</body>
+</html>
