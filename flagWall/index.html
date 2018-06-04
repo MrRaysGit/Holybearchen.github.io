@@ -77,7 +77,7 @@
 		</div>
 	</div>
 	</div>
-	<!-- 第1块  到班夫看什么-->
+	<!-- 第1块  内容-->
 	<div class="section index-section1 pbSection pageSection" id="section1">
 		<div class="sectionInner">
 			<div class="sectionText">
@@ -85,7 +85,13 @@
 				<p class="fontGray">今天，又有哪些家伙立了flag？</p>
 			</div>
 			<div class="picWall fullWall paddingBWall">
-		    
+		    	<div class="loading">
+				        <span></span>
+				        <span></span>
+				        <span></span>
+				        <span></span>
+				        <span></span>
+				</div>
 		        <div id="masonry" class="container-fall">
 		        </div>
 		        <div id="masonry_ghost" class="hide">
@@ -217,6 +223,7 @@
 	             	var appendItem="<div class='thumbnail celeItem '><div class='img-icon lu likeBtn hideIcon'><div class='btn-circle green'><i class='icon-heart'></i></div></div><a href='javascript:void(0);'><div class='images'><input type='hidden' value='noPic' title='cele'><div class='celeName noPic'><div class='inner'><h2>"+result[i].name+"信誓旦旦地说：</h2><p><i class='icon-time fontPink'></i><span class='fontGray'>"+time_+"</span></p></div></div></div><div class='caption'><div class='content'><p>"+result[i].content+"!！</p></div></div></a></div>"
 	             	$('#masonry_ghost').append(appendItem);
 	             }
+	             $('.loading').hide();
 	             waterFall();
 
 	        }).catch(function (err) {
