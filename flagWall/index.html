@@ -25,7 +25,7 @@
 			<li><a href="contact.html">							联系我们</a></li>
 		</nav>
 		<div class="phoneNav">
-			<a href="#" class="close" id="J_phoneNavClose" iphonenavd="J_phoneNavClose"><i class=" icon-remove icon-3x"></i></a>
+			<a href="#" class="close" id="J_phoneNavClose" iphonenavd="J_phoneNavClose"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
 			<ul class="navList">
 		    	<li class="current"><a href="index.html">首页	</a></li>
 				<li><a href="contact.html">				联系我们</a></li>
@@ -41,7 +41,7 @@
 					EN	
 				</a>
 				<div class="btn-circle pink smallTopNav" id="J_smallTopNav">
-					<i class="icon-reorder"></i>
+					<span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
 				</div>	
 				<a class="btn-oval fl pink fontWhite" data-toggle="modal" data-target="#myModal" href="#">
 					<span style="font-size: 17px">+</span>
@@ -95,33 +95,7 @@
 		        <div id="masonry" class="container-fall">
 		        </div>
 		        <div id="masonry_ghost" class="hide">
-		            <div class="thumbnail celeItem ">
-		                <div class="img-icon lu likeBtn hideIcon">
-		                    <div class="btn-circle green">
-		                        <i class="icon-heart"></i>
-		                    </div>
-		                </div>
-		                <a href="index.html"><!-- 跳转链接 -->
-		                    <div class="images">
-		                        <input type="hidden" value="noPic" title="cele">
-		                        <div class="celeName noPic">
-		                            <div class="inner">
-		                                <h2>王境泽信誓旦旦地说：</h2>
-		                                <p>
-		                                    <i class="icon-time fontPink"></i>
-		                                    <span class="fontGray">1月</span>
-		                                </p>
-		                            </div>
-		                        </div>
-		                    </div>
-
-		                    <div class="caption">
-		                        <div class="content">
-		                            <p>我王境泽就算是死，也不会吃你们一口吃的！</p>
-		                        </div>
-		                    </div>
-		                </a>
-		            </div>
+		            
 		        </div>
 		    </div>
 		</div>
@@ -220,7 +194,7 @@
 				    var m = "0"+(date.getMonth()+1);
 				    var d = "0"+date.getDate();
 				    var time_= y+"-"+m.substring(m.length-2,m.length)+"-"+d.substring(d.length-2,d.length);
-	             	var appendItem="<div class='thumbnail celeItem '><div class='img-icon lu likeBtn hideIcon'><div class='btn-circle green'><i class='icon-heart'></i></div></div><a href='javascript:void(0);'><div class='images'><input type='hidden' value='noPic' title='cele'><div class='celeName noPic'><div class='inner'><h2>"+result[i].name+"信誓旦旦地说：</h2><p><i class='icon-time fontPink'></i><span class='fontGray'>"+time_+"</span></p></div></div></div><div class='caption'><div class='content'><p>"+result[i].content+"!！</p></div></div></a></div>"
+	             	var appendItem="<div class='thumbnail celeItem '><div class='img-icon lu likeBtn hideIcon'><div class='btn-circle green'><i class='icon-heart'></i></div></div><a href='javascript:void(0);'><div class='images'><input type='hidden' value='noPic' title='cele'><div class='celeName noPic'><div class='inner'><h2>"+result[i].name+"信誓旦旦地说：</h2><p><span class='glyphicon glyphicon-flag' style='color:#d2a4c8' aria-hidden='true'><span class='fontGray'>"+time_+"</span></p></div></div></div><div class='caption'><div class='content'><p>"+result[i].content+"!！</p></div></div></a></div>"
 	             	$('#masonry_ghost').append(appendItem);
 	             }
 	             $('.loading').hide();
