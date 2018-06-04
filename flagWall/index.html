@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/index1.0.css">
 	<link rel="stylesheet" type="text/css" href="./css/page.css">
 	<link rel="stylesheet" type="text/css" href="./lib/FlexSlider/flexslider.css">
-	<link rel="stylesheet" type="text/css" href="./lib/Font-Awesome-3.2.1/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="./lib/Font-Awesome-3.2.1/css/font-awesome.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="./lib/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="./lib/iconfont2/iconfont.css">
 	<script type="text/javascript" src="./lib/jquery-1.11.2.js"></script>
@@ -22,7 +22,7 @@
 		<div class="logo fl"><h1><a href="#"><img style="width:83px" src="./images/naslogo-b.png" alt=""></a></h1></div>
 		<nav id="nav" class="pcNav fl">
 			<li class="current"><a href="index.html">首页	</a></li>
-			<li><a href="contact+$("#input_if").val()+ $("#input_do").val().html">							联系我们</a></li>
+			<li><a href="contact.html">							联系我们</a></li>
 		</nav>
 		<div class="phoneNav">
 			<a href="#" class="close" id="J_phoneNavClose" iphonenavd="J_phoneNavClose"><i class=" icon-remove icon-3x"></i></a>
@@ -214,7 +214,7 @@
 				    var m = "0"+(date.getMonth()+1);
 				    var d = "0"+date.getDate();
 				    var time_= y+"-"+m.substring(m.length-2,m.length)+"-"+d.substring(d.length-2,d.length);
-	             	var appendItem="<div class='thumbnail celeItem '><div class='img-icon lu likeBtn hideIcon'><div class='btn-circle green'><i class='icon-heart'></i></div></div><a href='index.html'><div class='images'><input type='hidden' value='noPic' title='cele'><div class='celeName noPic'><div class='inner'><h2>"+result[i].name+"信誓旦旦地说：</h2><p><i class='icon-time fontPink'></i><span class='fontGray'>"+time_+"</span></p></div></div></div><div class='caption'><div class='content'><p>"+result[i].content+"!！</p></div></div></a></div>"
+	             	var appendItem="<div class='thumbnail celeItem '><div class='img-icon lu likeBtn hideIcon'><div class='btn-circle green'><i class='icon-heart'></i></div></div><a href='javascript:void(0);'><div class='images'><input type='hidden' value='noPic' title='cele'><div class='celeName noPic'><div class='inner'><h2>"+result[i].name+"信誓旦旦地说：</h2><p><i class='icon-time fontPink'></i><span class='fontGray'>"+time_+"</span></p></div></div></div><div class='caption'><div class='content'><p>"+result[i].content+"!！</p></div></div></a></div>"
 	             	$('#masonry_ghost').append(appendItem);
 	             }
 	             waterFall();
